@@ -21,10 +21,10 @@
                 <h1>Haivex</h1>
             </div>
             <ol class="sticky-nav__links">
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ol>
     </nav>
     <header class="important-info">
@@ -40,7 +40,7 @@
                 </div>
             </section>
         </section>
-        <section class="cooperation">
+        <section class="co-operation">
             <p>See my CV and write to me if you want a co-opeeration</p>
             <button class="cooperation__contact">Contact me</button>
             <button class="cooperation__cv">Check my CV</button>
@@ -48,7 +48,7 @@
     </header>
     <main class="info">
         <section class="info__about-me">
-           <h3>About me</h3>
+           <h3 id="about-me">About me</h3>
            <div class="avatar-container">
                 <img src="photos/avatar.jpg">
            </div>
@@ -63,7 +63,7 @@
            </div>
         </section>
         <section class="info__skills">
-            <h3>Skills</h3>
+            <h3 id="skills">Skills</h3>
             <figure>
                 <i class="fab fa-html5"></i>
                 <figcaption>HTML</figcaption>
@@ -78,7 +78,7 @@
             </figure>
         </section>
         <section class="info__portfolio">
-            <h3></h3>
+            <h3 id="portfolio">Portfolio</h3>
             <div class="portfolio-tile">1</div>
             <div class="portfolio-tile">2</div>
             <div class="portfolio-tile">3</div>
@@ -87,6 +87,7 @@
             <div class="portfolio-tile">6</div>
         </section>
         <section class="contact">
+            <h3 id="contact">Contact</h3>
             <section class="contact__instructions">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi necessitatibus molestiae totam quas. Cumque odio fugit maiores nostrum delectus non id exercitationem iure assumenda aperiam? Aut sit exercitationem eum maiores?
             </section>
@@ -104,11 +105,11 @@
                 </div>
             </section>
             <form class="contact__form" method="post" action="/send">
-                <input type="text" name="firstname" placeholder="Imię">
-                <input type="email" name="email" placeholder="E-mail">
-                <input type="text" name="topic" placeholder="Topic">
+                <input name="firstname" type="text" placeholder="Imię">
+                <input name="email" type="email" placeholder="E-mail">
+                <input name="topic" type="text" placeholder="Topic">
                 <textarea name="message" placeholder="Message"></textarea>
-                <input type="submit" value="Send">
+                <input value="Send" type="submit">
             </form>
         </section>
     </main>
