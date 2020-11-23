@@ -6,15 +6,16 @@
     <meta charset="utf-8">
     <meta name="author" content="Mateusz Kmieć">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
-    <meta name="description"
-        content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+    <title>Businness Card</title>
+    <meta name="description" content="Haivex Portfolio">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b64ffabfa5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="important-info">
-        <nav class="sticky-nav">
+    <nav class="sticky-nav">
             <div class="sticky-nav__logo">
                 <img src="photos/martial-arts.png">
                 <h1>Haivex</h1>
@@ -25,14 +26,17 @@
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ol>
-        </nav>
+    </nav>
+    <header class="important-info">
         <section class="banner">
             <img class="banner__photo" src="photos/pexels-caleb-oquendo-3023756.jpg" alt="Martial Arts Image">
             <section class="banner__text">
                 <h2>Hello World</h2>
-                <h3>My name is Mateusz</h3>
+                <h2>My name is Mateusz</h2>
                 <div class="socials">
-
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
                 </div>
             </section>
         </section>
@@ -42,8 +46,9 @@
             <button class="cooperation__cv">Check my CV</button>
         </section>
     </header>
-    <section class="info">
+    <main class="info">
         <section class="info__about-me">
+           <h3>About me</h3>
            <div class="avatar-container">
                 <img src="photos/avatar.jpg">
            </div>
@@ -58,20 +63,22 @@
            </div>
         </section>
         <section class="info__skills">
+            <h3>Skills</h3>
             <figure>
-                <img src="">
+                <i class="fab fa-html5"></i>
                 <figcaption>HTML</figcaption>
             </figure>
             <figure>
-                <img src="">
+                <i class="fab fa-css3-alt"></i>
                 <figcaption>CSS</figcaption>
             </figure>
             <figure>
-                <img src="">
+                <i class="fab fa-js-square"></i>
                 <figcaption>JS</figcaption>
             </figure>
         </section>
         <section class="info__portfolio">
+            <h3></h3>
             <div class="portfolio-tile">1</div>
             <div class="portfolio-tile">2</div>
             <div class="portfolio-tile">3</div>
@@ -79,28 +86,32 @@
             <div class="portfolio-tile">5</div>
             <div class="portfolio-tile">6</div>
         </section>
-    </section>
-    <section class="contact">
-        <section class="contact__instructions">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi necessitatibus molestiae totam quas. Cumque odio fugit maiores nostrum delectus non id exercitationem iure assumenda aperiam? Aut sit exercitationem eum maiores?
+        <section class="contact">
+            <section class="contact__instructions">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi necessitatibus molestiae totam quas. Cumque odio fugit maiores nostrum delectus non id exercitationem iure assumenda aperiam? Aut sit exercitationem eum maiores?
+            </section>
+            <section class="contact__address">
+                <i class="fas fa-envelope-open-text"></i>
+                <span>Mateusz</span>
+                <span>Poland, Warsaw</span>
+                <span>ul. Warszawska 12/3 45-678</span>
+                <span>+48 123-456-789</span>
+                <span>email@domain.com</span>
+                <div class="socials">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </section>
+            <form class="contact__form" method="post" action="/send">
+                <input type="text" name="firstname" placeholder="Imię">
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="text" name="topic" placeholder="Topic">
+                <textarea name="message" placeholder="Message"></textarea>
+                <input type="submit" value="Send">
+            </form>
         </section>
-        <section class="contact__address">
-            <span>Mateusz</span>
-            <span>Poland, Warsaw</span>
-            <span>ul. Warszawska 12/3 45-678</span>
-            <span>+48 123-456-789</span>
-            <span>email@domain.com</span>
-            <div class="socials">
-
-            </div>
-        </section>
-        <form class="contact__form" method="post" action="/send">
-            <input type="text" placeholder="Imię">
-            <input type="email" placeholder="E-mail">
-            <input type="text" placeholder="Topic">
-            <textarea placeholder="Message"></textarea>
-        </form>
-    </section>
+    </main>
     <footer class="copyright-licenses">
         <div class="licenses">
             <p>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
