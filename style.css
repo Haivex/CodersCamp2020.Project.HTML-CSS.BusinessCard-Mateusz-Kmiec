@@ -19,6 +19,7 @@ img {
     top: 0;
     z-index: 2;
     display: flex;
+    padding: 20px;
     align-items: center;
     justify-content: space-between;
     height: 10vh;
@@ -31,6 +32,11 @@ img {
     justify-content: center;
 }
 
+.sticky-nav__logo img {
+    height: calc(10vh - 20px);
+    margin-right: 10px;
+}
+
 .sticky-nav__links {
     display: flex;
     font-size: 1rem;
@@ -40,7 +46,7 @@ img {
 }
 
 .sticky-nav__links li a {
-    margin-right: 10px;
+    margin-left: 10px;
     color: black;
     text-decoration: none;
 }
@@ -76,4 +82,44 @@ img {
 
 .info__about-me {
 
+}
+
+.avatar-container {
+    width: 100px;
+    height: 100px;
+}
+
+.co-operation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1.6rem;
+}
+
+.co-operation p {
+    flex-basis: 100%;
+    text-align: center;
+    font-weight: 100;
+}
+
+.co-operation button{
+    margin: 10px;
+    flex-basis: 150px;
+    font-weight: 600;
+}
+   
+.button {
+    padding: 10px;
+    color: #FFFFFF;
+    border: 1px solid #FFAE00;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #EB575E, #EDD513);
+}
+
+.button:hover {
+    background-image: none;
+    background-color: #ffffff;
+    color: #333333;
+    cursor: pointer;
 }
