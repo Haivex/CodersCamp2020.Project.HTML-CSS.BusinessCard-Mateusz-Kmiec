@@ -101,30 +101,32 @@
         <section class="contact">
             <h3 id="contact">Contact</h3>
             <div class="contact-container">
-                <section class="contact__instructions">
-                    <i class="fas fa-envelope-open-text"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi necessitatibus molestiae totam quas. Cumque odio fugit maiores nostrum delectus non id exercitationem iure assumenda aperiam? Aut sit exercitationem eum maiores?</p>
-                </section>
-                <section class="contact__address">
-                    <span>Mateusz</span>
-                    <span>Poland, Warsaw</span>
-                    <span>ul. Warszawska 12/3 45-678</span>
-                    <span>+48 123-456-789</span>
-                    <span>email@domain.com</span>
-                    <div class="form-socials">
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-github"></i>
-                    </div>
-                </section>
+                <div class="contact-left-container">
+                    <section class="contact__instructions">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi necessitatibus molestiae totam quas. Cumque odio fugit maiores nostrum delectus non id exercitationem iure assumenda aperiam? Aut sit exercitationem eum maiores?</p>
+                    </section>
+                    <section class="contact__address">
+                        <span>Mateusz</span>
+                        <span>Poland, Warsaw</span>
+                        <span>ul. Warszawska 12/3 45-678</span>
+                        <span>+48 123-456-789</span>
+                        <span>email@domain.com</span>
+                        <div class="form-socials">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </section>
+                </div>
+                <form class="contact__form" method="post" action="/send">
+                    <input name="firstname" type="text" placeholder="Imię">
+                    <input name="email" type="email" placeholder="E-mail">
+                    <input name="topic" type="text" placeholder="Topic">
+                    <textarea name="message" placeholder="Message" rows="10"></textarea>
+                    <input class="button submit" value="Send" type="submit">
+                </form>
             </div>
-            <form class="contact__form" method="post" action="/send">
-                <input name="firstname" type="text" placeholder="Imię">
-                <input name="email" type="email" placeholder="E-mail">
-                <input name="topic" type="text" placeholder="Topic">
-                <textarea name="message" placeholder="Message" rows="10"></textarea>
-                <input class="button submit" value="Send" type="submit">
-            </form>
         </section>
     </main>
     <footer class="copyright-licenses">
