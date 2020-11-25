@@ -123,3 +123,30 @@ img {
     color: #333333;
     cursor: pointer;
 }
+
+.info__about-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 
+}
+
+.avatar-container {
+    flex-basis: 10%;
+}
+
+.basic-about {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+
+.description-about {
+    flex-basis: 60%;
+}
+
