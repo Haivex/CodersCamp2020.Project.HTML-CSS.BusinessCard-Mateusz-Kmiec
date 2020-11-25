@@ -70,7 +70,7 @@
     font-size: 1.6rem;
 }
 
-.socials {
+.banner-socials {
     display: flex;
     justify-content: space-evenly;
 }
@@ -120,46 +120,55 @@
 }
 
 #about-me {
-    width: 80%;
+    width: 90%;
     margin: 10px auto;
 }
 
 .about-me-container {
     display: flex;
-    border: 1px solid black;
     justify-content: space-evenly;
+    align-items: center;
     padding: 20px;
-    width: 80%;
+    width: 90%;
+    min-height: 40vh;
     margin: 0 auto;
+    font-size: 1.6rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
 
 .avatar-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
     width: 20%;
-    height: auto;
+    height: 40vh;
 }
 
 .avatar-container img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 .basic-about {
    display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-right: 10px;
     width: 30%;
+    height: 40vh;
 }
 
 .description-about {
+    border-left: 4px dotted orange;
+    padding-left: 20px;
     width: 50%;
+    min-height: calc(40vh - 40px);
 }
 
 #skills {
-    width: 80%;
+    width: 90%;
     margin: 10px auto;
 }
 
@@ -167,10 +176,12 @@
     display: flex;
     flex: 1;
     justify-content: space-around;
-    border: 1px solid black;
-    width: 80%;
+    align-items: center;
+    width: 90%;
+    min-height: 40vh;
     margin: 0 auto;
     padding: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
 
 .skills-container figure {
@@ -188,6 +199,7 @@ figcaption {
 
 #portfolio {
     text-align: center;
+    margin: 10px 0px;
 }
 
 .portfolio-container {
@@ -195,10 +207,6 @@ figcaption {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50vh;
     text-align: center;
-}
-
-.portfolio-tile {
-    /* border: 1px solid orange; */
 }
 
 .portfolio-tile img {
@@ -218,8 +226,9 @@ figcaption {
 .contact {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
 
 #contact {
@@ -232,7 +241,7 @@ figcaption {
     flex-direction: column;
     justify-content: space-between;
     flex-basis: 50%;
-    border: 1px solid black;
+    padding: 20px;
 }
 
 .contact__address {
@@ -243,8 +252,36 @@ figcaption {
 .contact__form {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    justify-content: space-around;
     flex-basis: 50%;
+    padding: 20px;
+}
+
+input { 
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #FAFAFA;
+   
+}
+
+textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #FAFAFA;
+    resize: none;
+}
+
+.submit {
+    width: 30%;
+    align-self: flex-end;
+}
+
+.form-socials {
+    margin-top: 5px;
 }
 
 .copyright-licenses {
