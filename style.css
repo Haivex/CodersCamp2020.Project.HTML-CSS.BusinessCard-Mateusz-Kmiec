@@ -72,11 +72,26 @@
     transform: translateX(-25%);
     text-align: center;
     font-size: 1.6rem;
+    color: white;
+}
+
+.banner__text h2:first-child {
+    color: #87431d;
 }
 
 .banner-socials {
     display: flex;
     justify-content: space-evenly;
+}
+
+.banner-socials a {
+    position: relative;
+    color: white;
+}
+
+.banner-socials a:hover {
+    top: 3px;
+    color: white;
 }
 
 .avatar-container {
@@ -287,7 +302,13 @@ figcaption {
    color: white;
 }
 
-.email {
+.tel {
+    color: white;
+    text-decoration: none;
+}
+
+.email{
+    color: white;
     text-decoration: underline;
 }
 
@@ -329,8 +350,15 @@ textarea {
     font-size: 1.1rem;
 }
 
-.form-socials * {
+.form-socials a {
+    position: relative;
     margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.form-socials a:hover {
+    top: 3px;
 }
 
 .copyright-licenses {
