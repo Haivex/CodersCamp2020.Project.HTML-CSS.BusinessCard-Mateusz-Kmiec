@@ -19,6 +19,7 @@
     justify-content: space-between;
     height: 10vh;
     background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
 
 .sticky-nav__logo {
@@ -44,10 +45,6 @@
     margin-left: 10px;
     color: black;
     text-decoration: none;
-}
-
-.important-info {
-
 }
 
 .banner {
@@ -119,10 +116,19 @@
     cursor: pointer;
 }
 
-#about-me {
+.section-header {
     width: 90%;
     margin: 10px auto;
+    font-size: 1.6rem;
 }
+
+.section-header:before {
+    display: block;
+    height: 10vh;   /* equal to the header height */
+    margin-top: -10vh;  /* negative margin equal to the header height */
+    visibility: hidden;
+    content: "";
+  }
 
 .about-me-container {
     display: flex;
@@ -167,11 +173,6 @@
     min-height: calc(40vh - 40px);
 }
 
-#skills {
-    width: 90%;
-    margin: 10px auto;
-}
-
 .skills-container {
     display: flex;
     flex: 1;
@@ -196,10 +197,8 @@ figcaption {
     color: orange;
 }
 
-
 #portfolio {
     text-align: center;
-    margin: 10px 0px;
 }
 
 .portfolio-container {
@@ -249,8 +248,8 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px;
-    width: 150%;
+    padding: 40px;
+    width: 170%;
 }
 
 .contact-left-container {
@@ -258,7 +257,12 @@ figcaption {
     flex-direction: column;
     justify-content: space-between;
     background-color: orange;
+    color: white;
     padding: 20px;
+}
+
+.email {
+    text-decoration: underline;
 }
 
 input { 
@@ -277,6 +281,10 @@ textarea {
     background-color: #FAFAFA;
     resize: none;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.form-header {
+    margin-left: 0px;
 }
 
 .submit {

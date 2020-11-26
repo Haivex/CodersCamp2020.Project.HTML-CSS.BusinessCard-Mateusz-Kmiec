@@ -48,7 +48,7 @@
     </header>
     <main class="info">
         <section class="info__about-me">
-           <h3 id="about-me">About me</h3>
+           <h3 id="about-me" class="section-header">About me</h3>
            <div class="about-me-container">
                 <div class="avatar-container">
                     <img src="photos/avatar.jpg">
@@ -65,7 +65,7 @@
            </div>
         </section>
         <section class="info__skills">
-            <h3 id="skills">Skills</h3>
+            <h3 id="skills" class="section-header">Skills</h3>
             <div class="skills-container">
                 <figure>
                     <i class="fab fa-html5"></i>
@@ -82,7 +82,7 @@
             </div>
         </section>
         <section class="info__portfolio">
-            <h3 id="portfolio">Portfolio</h3>
+            <h3 id="portfolio" class="section-header">Portfolio</h3>
             <div class="portfolio-container">
                 <div class="portfolio-tile">
                     <img src="photos/pexels-pixabay-163403.jpg">
@@ -99,7 +99,7 @@
             </div>
         </section>
         <section class="contact">
-            <h3 id="contact">Contact</h3>
+            <h3 id="contact" class="section-header">Contact</h3>
             <div class="contact-container">
                 <div class="contact-left-container">
                     <section class="contact__instructions">
@@ -107,19 +107,20 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi necessitatibus molestiae totam quas. Cumque odio fugit maiores nostrum delectus non id exercitationem iure assumenda aperiam? Aut sit exercitationem eum maiores?</p>
                     </section>
                     <section class="contact__address">
-                        <span>Mateusz</span>
-                        <span>Poland, Warsaw</span>
-                        <span>ul. Warszawska 12/3 45-678</span>
-                        <span>+48 123-456-789</span>
-                        <span>email@domain.com</span>
                         <div class="form-socials">
                             <i class="fab fa-facebook"></i>
                             <i class="fab fa-linkedin"></i>
                             <i class="fab fa-github"></i>
                         </div>
+                        <span>Mateusz</span>
+                        <span>Poland, Warsaw</span>
+                        <span>ul. Warszawska 12/3 45-678</span>
+                        <span>+48 123-456-789</span>
+                        <span class="email">email@domain.com</span>
                     </section>
                 </div>
                 <form class="contact__form" method="post" action="/send">
+                    <h3 class="section-header form-header">Let's start!</h3>
                     <input name="firstname" type="text" placeholder="Imię">
                     <input name="email" type="email" placeholder="E-mail">
                     <input name="topic" type="text" placeholder="Topic">
