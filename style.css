@@ -38,13 +38,18 @@
     font-size: 1rem;
     font-weight: 600;
     list-style-type: none;
-    color: #333333;
+    color: #3F3F3F;
 }
 
 .sticky-nav__links li a {
+    position: relative;
     margin-left: 10px;
     color: black;
     text-decoration: none;
+}
+
+.sticky-nav__links li a:hover {
+    top: 2px;
 }
 
 .banner {
@@ -166,6 +171,15 @@
     height: 40vh;
 }
 
+.basic-about span {
+    color: #FFC949;
+    font-weight: 600;
+}
+
+.basic-about strong {
+    color: #333333;
+}
+
 .description-about {
     border-left: 4px dotted orange;
     padding-left: 20px;
@@ -194,7 +208,7 @@
 }
 
 figcaption {
-    color: orange;
+    color: #FFC949;
 }
 
 #portfolio {
@@ -223,16 +237,16 @@ figcaption {
 }
 
 .contact {
-    width: 90%;
-    margin: 10px auto;
+    background-color: #FAFAFA;
+    margin-top: 30vh;
+    padding-bottom: 40px;
 }
 
-#contact {
-   flex-basis: 100%;
-   margin: 10px 0px;
-}
+
 
 .contact-container {
+    width: 90%;
+    margin: 10px auto;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
@@ -250,23 +264,36 @@ figcaption {
     flex-direction: column;
     justify-content: space-around;
     padding: 40px;
-    width: 100%;
+    width: 150%;
+    background-color: #ffffff;
 }
 
 .contact-left-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: orange;
+    background-color: #FF9A3D;
     color: white;
     padding: 40px;
+}
+
+.contact__instructions {
+    width: 75%;
+    font-size: 1.6rem;
+    color: #FAFAFA;
+}
+
+.fa-envelope-open-text {
+   font-size: 3.2rem;
+   margin-bottom: 20px;
+   color: white;
 }
 
 .email {
     text-decoration: underline;
 }
 
-input { 
+input:not([type="submit"]) { 
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 10px;
@@ -314,6 +341,7 @@ textarea {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
 
