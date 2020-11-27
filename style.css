@@ -50,7 +50,6 @@
 }
 
 .sticky-nav__logo img {
-    max-height: calc(10vh - 20px);
     width: auto;
     margin-right: 10px;
 }
@@ -299,14 +298,13 @@
 
 @media (max-width: 768px) {
     .avatar-container {
-       
+        display: flex;
     }
 }
 
 @media (max-width: 500px) {
     .avatar-container {
         display: flex;
-    
     }
 }
 
@@ -320,7 +318,8 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 20px;
-    width: 30%;
+    min-width: 30%;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -331,25 +330,14 @@
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
+        width: 100%;
+        margin-left: 0px;
     }
 }
 
 .basic-about span {
     color: #FFC949;
     font-weight: 600;
-}
-
-@media (max-width: 640px) {
-    .basic-about  {
-        width: 100%;
-    }
-    
-}
-
-@media (max-width: 768px) {
-    .basic-about {
-        width: 100%;
-    }
 }
 
 @media (max-width: 640px) {
@@ -380,6 +368,8 @@
         border-top: 4px dotted orange;
         border-left: none;
         padding-left: 0px;
+        margin-top: 15px;
+        padding-top: 15px;
         width: 80%;
     }
 }
@@ -393,7 +383,6 @@
         margin-top: 15px;
     }
 }
-
 
 .skills-container {
     display: flex;
@@ -456,10 +445,6 @@ figcaption {
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    
-}
-
 @media (max-width: 640px) {
     .portfolio-container {
         display: flex;
@@ -471,10 +456,6 @@ figcaption {
    width: 100%;
    height: 100%;
    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    
 }
 
 @media (max-width: 640px) {
@@ -494,7 +475,6 @@ figcaption {
 
 .contact {
     background-color: #FAFAFA;
-    margin-top: 30vh;
     padding-bottom: 40px;
 }
 
@@ -517,10 +497,6 @@ figcaption {
     display: flex;
     justify-content: space-between;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-}
-
-@media (max-width: 768px) {
-    
 }
 
 @media (max-width: 640px) {
@@ -558,10 +534,6 @@ figcaption {
     width: 75%;
     font-size: 1.6rem;
     color: #FAFAFA;
-}
-
-@media (max-width: 768px) {
-    
 }
 
 @media (max-width: 640px) {
