@@ -53,7 +53,7 @@
 
 @media (max-width: 640px) {
     .sticky-nav__logo {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 }
 
@@ -577,6 +577,12 @@ figcaption {
    color: white;
 }
 
+@media (max-width: 640px) {
+    .fa-envelope-open-text {
+        font-size: 10vw;
+     }
+}
+
 .tel {
     color: white;
     text-decoration: none;
@@ -612,6 +618,12 @@ input:not([type="submit"]) {
    
 }
 
+@media (max-width: 640px) {
+    input:not([type="submit"]) {
+        font-size: 4vw;
+    }
+}
+
 input:focus:not([type="submit"]), textarea:focus {
     outline: none;
     box-shadow: inset 0 3px 6px rgba(0,0,0,0.16);
@@ -626,6 +638,13 @@ textarea {
     resize: none;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
+
+@media (max-width: 640px) {
+    textarea {
+        font-size: 4vw;
+    }
+}
+
 
 .form-header {
     margin-left: 0px;
