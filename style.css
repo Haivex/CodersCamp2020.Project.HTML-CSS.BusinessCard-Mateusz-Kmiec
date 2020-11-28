@@ -48,6 +48,13 @@
     justify-content: center;
     color: #333333;
     text-decoration: none;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+    .sticky-nav__logo {
+        font-size: 8vw;
+    }
 }
 
 .sticky-nav__logo img {
@@ -74,7 +81,7 @@
 @media (max-width: 640px) {
     .sticky-nav__links {
         margin-top: 10px;
-        font-size: 1.4rem;
+        font-size: 4vw;
     }
 }
 
@@ -106,7 +113,7 @@
     left: 25%;
     transform: translateX(-25%);
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
     color: white;
 }
 
@@ -114,6 +121,7 @@
     .banner__text {
     top: 12.5%;
     text-align: left;
+    font-size: 4vw;
     }
 }
 
@@ -121,6 +129,7 @@
     .banner__text {
     top: 12.5%;
     text-align: left;
+    font-size: 4vw;
     }
 }
 
@@ -186,6 +195,7 @@
     .co-operation {
         flex-wrap: nowrap;
         flex-direction: column;
+        font-size: 7vw;
     }
 }
 
@@ -223,6 +233,12 @@
     background-image: linear-gradient(to right, #EB575E, #EDD513);
 }
 
+@media (max-width: 640px) {
+    .button {
+        font-size: 4vw;
+    }
+}
+
 .button:hover {
     background-image: none;
     background-color: #ffffff;
@@ -240,7 +256,6 @@
     .section-header {
         width: 100%;
         text-align: center;
-        font-size: 1.6rem;
     }
 }
 
@@ -248,7 +263,7 @@
     .section-header {
         width: 100%;
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 8vw;
     }
 }
 
@@ -285,6 +300,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 5vw;
     }
 }
 
@@ -421,11 +437,13 @@
 @media (max-width: 768px) {
     .skills-container figure {
         width: 100%;
+        font-size: 10vw;
     }
 }
 
 @media (max-width: 640px) {
     .skills-container figure {
+        font-size: 10vw;
         width: 100%;
     }
 }
@@ -530,6 +548,16 @@ figcaption {
     padding: 40px;
 }
 
+.contact-left-container span {
+    font-size: 1.6rem;
+}
+
+@media (max-width: 640px) {
+    .contact-left-container span {
+        font-size: 4vw;
+    }
+}
+
 .contact__instructions {
     width: 75%;
     font-size: 1.6rem;
@@ -539,6 +567,7 @@ figcaption {
 @media (max-width: 640px) {
     .contact__instructions {
         margin-bottom: 40px;
+        font-size: 6vw;
     }
 }
 
@@ -551,12 +580,28 @@ figcaption {
 .tel {
     color: white;
     text-decoration: none;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 640px) {
+    .tel {
+        font-size: 4vw;
+    }
 }
 
 .email{
     color: white;
     text-decoration: underline;
+    font-size: 1.6rem;
 }
+
+@media (max-width: 640px) {
+    .email {
+        font-size: 4vw;
+    }
+}
+
+
 
 input:not([type="submit"]) { 
     margin-bottom: 20px;
@@ -628,5 +673,9 @@ textarea {
     padding: 20px;
 }
 
-
+@media (max-width: 640px) {
+    .copyright-licenses {
+        font-size: 4vw;
+    }
+}
 
